@@ -1,6 +1,6 @@
 # Dicoding Submission Proyek Akhir: Integrasi Notes App dengan RESTful API
 
-Kriteria yang harus dipenuhi :
+note app
 
 1. Pertahankan Kriteria Submission Sebelumnya
 2. Memanfaatkan RESTful API sebagai Sumber Data

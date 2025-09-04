@@ -1,0 +1,87 @@
+:root {
+  --primary-bg: #f8f9fa;
+  --secondary-bg: #ffffff;
+  --card-bg: #ffffff;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --accent-color: #007bff;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5em;
+  display: inline-block;
+}
+
+.loadingIndicator {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  color: var(--text-primary);
+}
+
+.text-load {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#tab-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 80px auto 2em;
+  background-color: var(--secondary-bg);
+  padding: 0.5em;
+  border-radius: 8px;
+  max-width: fit-content;
+  border: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  padding: 0.7em 1.5em;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.tab-btn.active {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.tab-btn:hover:not(.active) {
+  background-color: #e9ecef;
+  color: var(--text-primary);
+}
